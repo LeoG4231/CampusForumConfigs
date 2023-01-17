@@ -10,6 +10,17 @@ spring:
     username: root
     password: renjian50nian13
     driver-class-name: com.mysql.cj.jdbc.Driver
+  redis:
+    database: 0
+    host: localhost
+    password:
+    jedis:
+      pool:
+        max-active: 5
+        min-idle: 0
+        max-idle: 5
+        max-wait: -1
+    timeout: 6000
 mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
